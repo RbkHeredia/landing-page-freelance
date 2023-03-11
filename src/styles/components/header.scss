@@ -1,0 +1,53 @@
+$static-font-path: '/assets/fonts/webfonts';
+$brand-primary-bordeaux: #da0050 !default;
+
+
+.slds-global-header {
+    background-color: white;
+    height: 7rem;
+    display: flex;
+    position: sticky;
+    max-width: 100%;
+    top: 0;
+    z-index: 15;
+    justify-content: center;
+    align-items: center;
+}
+
+.slds-global-header_container {
+    display: flex;
+    width: 80%;
+    position: sticky;
+    top: 0;
+    color: $brand-primary-bordeaux;
+    justify-content: space-between;
+}
+
+.fa-brush{
+    color: $brand-primary-bordeaux;
+    font-size: 25px;
+}
+
+.slds-global-header_container > button{
+    color: $brand-primary-bordeaux;
+    font-size: 20px;
+    background-color: white;
+    padding: 0.5rem 1rem;
+    border: 1px solid $brand-primary-bordeaux;
+    border-radius: 10px;
+}
+
+
+@media screen and (max-width: 600px) {
+    .disable-option{
+    display:none;
+    }
+    .slds-logo {
+        width: 130px;
+    }
+    
+}
+
+
+
+

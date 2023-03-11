@@ -1,0 +1,392 @@
+$static-font-path: '/assets/fonts/webfonts';
+$brand-primary-bordeaux: #da0050 !default;
+$font-family-primary: 'Montserrat';
+
+.container-pageReg {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 7rem;
+}
+
+.container-register {
+    width: 75%;
+    height: auto;
+    margin: auto;
+    margin-top: 10vw;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.container-text {
+    flex-wrap: nowrap;
+    width: 48%;
+    height: 100%;
+    position: relative;
+}
+
+.container-form {
+    background-color: #F5F5F5;
+    width: 48%;
+    height: 100%;
+    position: relative;
+    padding: 2vw 5vw;
+    padding-bottom: 2rem;
+}
+
+.qualified-title {
+    padding-right: 20px;
+    color: $brand-primary-bordeaux;
+    font-family: $font-family-primary;
+    font-style: bold;
+    font-weight: 700;
+    font-size: 3rem;
+    height: auto;
+}
+
+.qualified-text {
+    padding-right: 20px;
+    color: $brand-primary-bordeaux;
+    font-family: $font-family-primary;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.register-text {
+    color: $brand-primary-bordeaux;
+    font-family: $font-family-primary;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+
+
+.circle {
+
+    position: absolute;
+    width: 706.17px;
+    height: 706.17px;
+    left: 800px;
+    top: -500px;
+    border: 30px solid #80002F;
+    border-radius: 50%;
+    z-index: -10;
+    overflow: hidden;
+}
+
+.second-circle {
+    position: absolute;
+    width: 40vw;
+    height: 40vw;
+    left: -239.78px;
+    top: -90px;
+    border: 30px solid #80002F;
+    border-radius: 50%;
+    overflow-x: hidden;
+    z-index: -5;
+}
+
+.container-payment {
+    position: relative;
+    background-color: #EEF0F6;
+    height: auto;
+    padding-bottom: 5vw;
+    z-index: -10;
+}
+
+.cont-img-central {
+    display: flex;
+    height: auto;
+    max-width: 100%;
+    margin-left: 10vw;
+}
+
+.img-central {
+    margin-top: 10vw;
+    height: 350px;
+    border-radius: 20px;
+}
+
+.text-column {
+    width: 100%;
+    padding: 7vw
+}
+
+.cont-card-text {
+    display: flex;
+}
+
+.cont-icons-text {
+    display: flex;
+    height: auto;
+    min-width: 20rem;
+    overflow: auto;
+}
+
+
+.cont-icons {
+    margin-top: 1.3rem;
+    margin-right: 3vw;
+    margin-bottom: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: space-between;
+}
+
+.payment-title {
+    font-family: $font-family-primary;
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.payment-text {
+    font-family: $font-family-primary;
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 8px;
+    margin-bottom: 38px;
+}
+
+.container-icons {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0px 8vw 2rem 8vw;
+    justify-content: space-between;
+}
+
+.icon-text {
+    font-family: $font-family-primary;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.text-payment {
+    width: 40%;
+}
+
+.icons-section {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.container-cards-payment {
+    display: flex;
+    margin: 0px 8vw;
+}
+
+.container-profiles {
+    margin: 3rem;
+    text-align: center;
+    max-width: 100%;
+}
+
+.title-h2 {
+    font-family: $font-family-primary;
+    color: black;
+    font-weight: 700;
+    font-size: 39px;
+}
+
+.container-cards {
+    display: flex;
+    width: 100%;
+    animation-duration: 1.5s;
+    margin-left: 0;
+    overflow-x: hidden;
+    position: relative;
+    margin: auto;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+
+.container-final-landing {
+    margin-top: 5rem;
+    display: flex;
+    flex-wrap: nowrap;
+    max-width: 100%;
+}
+
+.cont-final-text {
+    text-align: center;
+    width: 40%;
+    text-align: start;
+    margin: 2vw 3vw;
+}
+
+.text-link {
+    text-decoration: none;
+}
+
+.cont-img {
+    max-width: 50%;
+}
+
+.imagen-final {
+    width: 50vw;
+    border-radius: 20px;
+}
+@media screen and (max-width:1060px) {
+    .cont-img-central {
+        flex-wrap: wrap;
+        margin: 0;
+        justify-content: center;
+    }
+
+    .cont-icons-text{
+        max-width: 20rem;
+    }
+
+    .cont-card-icons{
+        max-width: 15rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .container-pageReg {
+        overflow-x: hidden;
+    }
+
+    .container-register {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .container-text {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .qualified-title {
+        font-size: 2rem;
+        width: 100%;
+    }
+
+    .qualified-text {
+        color: black;
+        font-size: 1.1rem;
+
+    }
+
+    .register-text {
+        font-size: 1.1rem;
+    }
+
+    .container-form {
+        width: 100%;
+    }
+
+    .text-column {
+        width: 100%;
+        margin-left: 0;
+        margin: auto;
+        padding: 5vw;
+    }
+
+    .circle {
+        display: none;
+    }
+
+    .second-circle {
+        top: -300px;
+        left: -500px
+    }
+
+    .cont-img-central {
+        flex-wrap: wrap;
+        margin-top: 0;
+
+    }
+
+    .img-central {
+        display: block;
+        position: relative;
+        width: 90%;
+        height: auto;
+        top: -2vh;
+        border-radius: 20px;
+        margin-top: 0;
+    }
+
+    .container-icons {
+        flex-wrap: wrap;
+    }
+
+    .text-payment {
+        width: 100%;
+    }
+
+    .register-title {
+        text-align: center;
+    }
+
+    .icons-section {
+        margin: auto;
+        margin-bottom: 1rem;
+    }
+
+    .container-cards-payment {
+        flex-wrap: wrap;
+    }
+
+    .container-profiles {
+        margin: 1rem
+    }
+
+    .container-final-landing {
+        flex-wrap: wrap-reverse;
+    }
+
+    .cont-final-text {
+        width: 100%;
+        text-align: center;
+        margin:0;
+        justify-content: center;
+    }
+
+    .cont-img {
+        width: 100%;
+        margin-left: 1.5rem;
+    }
+
+    .imagen-final {
+        width: 80vw;
+    }
+}

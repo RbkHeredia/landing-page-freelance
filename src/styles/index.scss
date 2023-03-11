@@ -1,0 +1,1314 @@
+$static-font-path: '/assets/fonts/webfonts';
+@import 'node_modules/@salesforce-ux/design-system/scss/index';
+@import 'custom_tokens';
+
+/*html*/
+
+html {
+    background-color: $palette-neutral-100;
+    color: $color-gray-11;
+}
+
+
+/*colour pallete*/
+
+.bordeaux {
+    color: $brand-primary-bordeaux;
+}
+
+.bordeaux_bg {
+    background-color: $brand-primary-bordeaux;
+}
+
+.white {
+    color: $palette-neutral-100;
+}
+
+.lila {
+    color: $brand-secondary-lilac;
+}
+
+.lila_bg {
+    background-color: $brand-secondary-lilac;
+}
+
+.verde {
+    color: $brand-secondary-green;
+}
+
+.verde_bg {
+    background-color: $brand-secondary-green;
+}
+
+.verde-oscuro {
+    color: $brand-secondary-green_darker
+}
+
+
+/*forms*/
+
+::-webkit-input-placeholder {
+    font-size: 1.25rem;
+    line-height: 3rem
+}
+
+ :-ms-input-placeholder {
+    font-size: 1.25rem;
+    line-height: 3rem
+}
+
+ ::placeholder {
+    font-size: 1.25rem;
+    line-height: 3rem
+}
+
+.slds-input,
+.slds-select {
+    height: 3rem;
+    line-height: 3rem;
+    font-size: 1.25rem;
+}
+
+option {
+    font-size: 1.25rem;
+}
+
+.slds-form-element__label {
+    font-size: 1rem;
+}
+
+.slds-select_container:before {
+    top: calc((3rem / 2) - 8px);
+}
+
+.slds-select_container:after {
+    bottom: calc((3rem / 2) - 8px);
+}
+
+.slds-textarea {
+    min-height: 10rem!important;
+    line-height: 3rem;
+    font-size: 1.25rem;
+}
+
+.slds-form-element__legend {
+    font-weight: initial!important;
+}
+
+.slds-file-selector__dropzone {
+    padding: 0.55rem;
+    height: 3rem;
+}
+
+
+/*buttons*/
+
+.slds-button_brand {
+    background-color: $brand-primary-bordeaux;
+    color: $palette-neutral-100;
+    border-color: $brand-primary-bordeaux;
+}
+
+.slds-button_brand:hover,
+.slds-button_brand:focus {
+    background-color: $brand-primary-bordeaux_darker;
+    border-color: $brand-primary-bordeaux_darker;
+}
+
+.slds-button_neutral {
+    background-color: $palette-neutral-100;
+    color: $brand-primary-bordeaux;
+    border-color: $brand-primary-bordeaux;
+}
+
+.slds-button_success {
+    background-color: $brand-secondary-green!important;
+    color: $palette-neutral-100!important;
+    border-color: $brand-secondary-green!important;
+}
+
+.slds-button_success:hover,
+.slds-button_success:focus,
+.slds-button--success:hover,
+.slds-button--success:focus {
+    background-color: $brand-secondary-green_darker;
+    color: $palette-neutral-100;
+    border-color: $brand-secondary-green_darker;
+}
+
+
+/*font-settings*/
+
+p.smaller {
+    font-size: .875rem;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.web h1 {
+    font-size: 3rem;
+}
+
+.web h2 {
+    font-size: 2.5rem;
+}
+
+
+/*helpers*/
+
+.width-100 {
+    width: 100%;
+}
+
+.mb-auto {
+    margin-bottom: auto;
+}
+
+.mt-auto {
+    margin-top: auto;
+}
+
+.mr-auto {
+    margin-right: auto;
+}
+
+.slds-grid_vertical-align-between {
+    justify-content: space-between;
+}
+
+.d-none {
+    display: none;
+}
+
+.icon-button {
+    height: 3rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-color: $color-gray-4!important;
+}
+
+.icon-button.btn-round {
+    border-radius: 100%;
+    height: 3rem;
+    width: 3rem;
+}
+
+@media (max-width:700px) {
+    .d-xs-block {
+        display: block;
+    }
+    .d-xs-none {
+        display: none;
+    }
+    .d-xs-flex {
+        display: flex;
+    }
+}
+
+@media (min-width:700px) {
+    .d-sm-block {
+        display: block;
+    }
+    .d-sm-none {
+        display: none;
+    }
+}
+
+.slds-no-flex {
+    -webkit-box-flex: 0!important;
+    -ms-flex: none!important;
+    flex: none!important;
+}
+
+
+/*borders*/
+
+.slds-border {
+    border: 1px solid $color-gray-5;
+}
+
+.no-border {
+    border: none!important;
+}
+
+
+/*buttons*/
+
+.primary-button {
+    background-color: $brand-primary-bordeaux;
+    color: $palette-neutral-100;
+}
+
+.secondary-button {
+    background-color: $color-gray-6!important;
+    color: $palette-neutral-100!important;
+}
+
+.tertiary-button {
+    border-color: $brand-primary-bordeaux;
+    color: $brand-primary-bordeaux;
+}
+
+
+/*cards*/
+
+.slds-card {
+    border-radius: .25rem;
+}
+
+.slds-card .slds-grid {
+    flex: 1;
+}
+
+.slds-card .slds-media {
+    border-radius: .25rem .25rem 0 0;
+}
+
+.slds-card .slds-media img {
+    min-width: 100%;
+}
+
+.slds-card__header-link {
+    display: flex;
+    align-items: center;
+}
+
+.slds-card__body {
+    min-height: 8rem;
+}
+
+.web .slds-card__body {
+    min-height: auto;
+    flex: 1;
+}
+
+.bordeaux_bg .slds-card__footer-action {
+    color: $palette-neutral-100;
+}
+
+
+/*home modules*/
+
+.pago-features {
+    align-items: stretch!important;
+}
+
+.pago-features .slds-col,
+.pago-features .slds-card {
+    display: flex!important;
+    flex-direction: column!important;
+    flex: 1!important;
+}
+
+.freela_starred svg {
+    fill: $palette-yellow-80;
+}
+
+.freelancers .slds-avatar {
+    width: 10rem!important;
+    height: 10rem!important;
+}
+
+.slds-card .slds-media img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+.freelancers .slds-card__footer {
+    display: flex;
+    margin: 0!important;
+    border: none!important;
+}
+
+.areas-ayuda-cards {
+    background: url(../assets/back-stroke.svg) no-repeat center / cover;
+}
+
+.slds-icon_container.bordeaux svg {
+    fill: $brand-primary-bordeaux!important;
+}
+
+.slds-icon_container.white svg {
+    fill: $palette-neutral-100!important;
+}
+
+
+/*modal*/
+
+.flex-fill {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.confirmacion-email_modal .slds-modal__content {
+    padding: 0 !important;
+    display: flex;
+}
+
+.confirmacion-email_modal figure {
+    max-height: 100%;
+    overflow: hidden;
+}
+
+.confirmacion-email_modal .slds-grid,
+.confirmacion-email_modal button {
+    width: 100%;
+}
+
+
+/*images*/
+
+.img-fit {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-position: center;
+}
+
+
+/*header*/
+
+.slds-global-header {
+    background-color: $brand-primary-bordeaux;
+    height: $height-header;
+    display: flex;
+    position: initial;
+    width: 100%;
+}
+
+.web .slds-global-header {
+    background-color: $palette-neutral-100;
+}
+
+.slds-global-header_container {
+    width: 100%;
+    margin: auto;
+    position: relative;
+    top: initial;
+    left: initial;
+}
+
+
+/*web header*/
+
+.slds-context-bar {
+    border-bottom: none;
+    color: $color-gray-13;
+    padding: 0;
+}
+
+.slds-context-bar {
+    justify-content: space-between;
+    flex: 1;
+}
+
+.web .slds-context-bar__item.slds-is-active:before {
+    content: "";
+    height: 2px;
+    background: $brand-primary-bordeaux!important;
+    bottom: -.875rem!important;
+    top: initial!important;
+}
+
+.private .slds-context-bar__item.slds-is-active:before {
+    content: "";
+    height: 2px;
+    background: $palette-neutral-100!important;
+    bottom: -1rem!important;
+    top: initial!important;
+}
+
+.web .slds-context-bar__item:not(.slds-no-hover):hover:after {
+    background: $brand-primary-bordeaux!important;
+    bottom: -.875rem!important;
+    height: 2px;
+}
+
+.private .slds-context-bar__item:not(.slds-no-hover):hover:after {
+    background: $brand-primary-bordeaux!important;
+    bottom: -1rem!important;
+    height: 2px;
+}
+
+.slds-context-bar__item:not(.slds-no-hover):hover,
+.slds-context-bar__item.slds-is-active {
+    background-color: initial!important;
+}
+
+.slds-context-bar__label-action {
+    color: $color-gray-13;
+    padding: 0 1.5rem;
+}
+
+.web .slds-context-bar__item.slds-is-active .slds-context-bar__label-action .slds-truncate {
+    color: $brand-primary-bordeaux!important;
+    font-weight: 700;
+}
+
+.private .slds-context-bar__item.slds-is-active .slds-context-bar__label-action .slds-truncate {
+    font-weight: 700;
+}
+
+.slds-context-bar.slds-button {
+    margin: auto 0 auto 1rem;
+    padding: 0 1rem;
+}
+
+
+/*main wrapper*/
+
+.app-wrapper {
+    width: 100%;
+    margin: auto;
+    min-height: calc(100vh - $height-header);
+    max-height: calc(100vh - $height-header);
+    justify-content: space-between;
+    flex-direction: column;
+    display: flex;
+}
+
+.app-wrapper .slds-container_x-large {
+    width: 100%;
+    margin: auto;
+    flex: 1;
+}
+
+
+/*area disponible*/
+
+.area-disponible {
+    border: 1px solid $color-gray-5;
+    border-radius: 1rem;
+    min-height: 10rem;
+}
+
+
+/*pills*/
+
+.slds-pill_container {
+    border-style: dashed;
+}
+
+.slds-pill .slds-icon-utility-favorite svg {
+    fill: $palette-yellow-80;
+}
+
+.slds-pill__action {
+    border-radius: 3rem;
+}
+
+
+/*freelas_4*/
+
+.freelas_4 {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-between;
+}
+
+.freelas_4 header {
+    flex: initial!important;
+    margin-bottom: auto!important;
+}
+
+.freelas_4 figure img {
+    max-height: 25rem;
+}
+
+
+/*footer*/
+
+.slds-global-footer {
+    border-top: 1px solid $color-gray-5;
+}
+
+.slds-global-footer_container {
+    margin: auto;
+    width: 100%;
+}
+
+.slds-global-footer_container.bordeaux_bg {
+    border-radius: 0 0 0.25rem 0.25rem;
+    border-color: $brand-primary-bordeaux
+}
+
+.web .slds-global-footer {
+    background-color: $brand-primary-bordeaux;
+    height: auto!important;
+}
+
+.web .slds-global-footer .slds-grid {
+    justify-content: space-between;
+}
+
+.web .slds-global-footer h5,
+.web .slds-global-footer a {
+    color: $palette-neutral-100;
+}
+
+
+/*project_publish*/
+
+@media (min-width:700px) {
+    .project_publish {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+    }
+    .project_publish .slds-container_x-large {
+        align-items: stretch;
+        display: flex;
+    }
+    .project_publish .slds-grid.slds-card {
+        align-items: stretch;
+    }
+    .project_publish .slds-grid.slds-card .slds-grid_vertical-align-between {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.project_publish .slds-card .slds-global-footer {
+    flex: initial;
+    height: initial;
+    border: none;
+}
+
+.optional_info {
+    position: relative;
+    z-index: 1;
+}
+
+.optional_info:after {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: -1;
+    height: 10rem;
+    width: 100%;
+    border-radius: 0 0 3rem 3rem;
+    background-color: $brand-primary-light_blue;
+    top: -3rem;
+}
+
+.optional_info.green:after {
+    background-color: $brand-secondary-green;
+}
+
+.project_publish .slds-global-footer {
+    height: initial;
+    border: none;
+}
+
+.optional_info .slds-col.slds-grid_vertical-align-between {
+    flex-direction: column;
+    display: flex;
+}
+
+.slds-accordion__summary-action {
+    border: 1px solid $color-gray-5;
+    margin-bottom: .5rem;
+}
+
+.slds-accordion__list-item {
+    border: none!important;
+}
+
+
+/*progress*/
+
+.slds-progress {
+    max-width: initial!important;
+    margin: 0;
+    flex: initial;
+}
+
+
+/*figure*/
+
+.radius-bottom_right {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 0 0 0 50%;
+    max-height: 75vh;
+}
+
+.radius-bottom_left {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 0 0 50% 0;
+    max-height: 75vh;
+}
+
+
+/*tabs*/
+
+
+/*reset cards in tabs*/
+
+.slds-card .slds-card,
+.slds-card .slds-card-wrapper,
+.slds-card-wrapper .slds-card,
+.slds-card-wrapper .slds-card-wrapper,
+.slds-modal .slds-card,
+.slds-modal .slds-card-wrapper,
+.slds-tabs_default .slds-card,
+.slds-tabs_default .slds-card-wrapper,
+.slds-tabs--default .slds-card,
+.slds-tabs--default .slds-card-wrapper,
+.slds-tabs_card .slds-card,
+.slds-tabs_card .slds-card-wrapper,
+.slds-tabs_card.slds-tabs_card .slds-card,
+.slds-tabs_card.slds-tabs_card .slds-card-wrapper {
+    border: solid 1px #dddbda;
+    -webkit-box-shadow: var(--sds-c-card-shadow, 0 2px 2px 0 rgba(0, 0, 0, 0.1));
+    box-shadow: var(--sds-c-card-shadow, 0 2px 2px 0 rgba(0, 0, 0, 0.1));
+    margin: 0;
+}
+
+.slds-tabs_default .tab-wrapper {
+    align-items: stretch;
+    gap: 1rem;
+    padding: 0 0.5rem;
+    max-width: 100%;
+    margin: auto auto 1rem auto;
+}
+
+.slds-card__body_inner.slds-grid {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: initial;
+    margin: auto!important;
+    height: 100%;
+}
+
+.slds-card__body_inner.slds-grid h1,
+.slds-card__body_inner.slds-grid p {
+    font-weight: 500;
+    color: $color-gray-9;
+}
+
+.slds-card__body_inner.slds-grid h1 {
+    font-size: 4.75rem
+}
+
+.slds-tabs .icon-button {
+    border-color: $color-gray-9!important;
+    color: $color-gray-4!important;
+}
+
+.slds-tabs_default__content .slds-global-footer {
+    border: none!important;
+}
+
+.slds-tabs_default__content h2 {
+    font-size: 1.5rem;
+}
+
+.slds-tabs_default__content h4 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+
+/*invoice preview*/
+
+.invoice-preview-holder {
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 2rem;
+}
+
+.invoice-preview-holder .slds-card .slds-grid.slds-grow-none {
+    flex: initial!important;
+}
+
+.invoice-preview-holder .slds-card {
+    margin-bottom: 1rem;
+}
+
+.invoice-preview-holder .slds-card h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.invoice-preview-holder .slds-card h1 {
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.tabla_mobile {
+    display: none;
+}
+
+.slds-card+.slds-card {
+    margin-top: initial;
+}
+
+.reference-images {
+    gap: 1rem;
+}
+
+.slds-accordion__summary {
+    margin: auto!important;
+}
+
+
+/*application*/
+
+.application h2,
+.application h4 {
+    font-size: 1.25rem;
+}
+
+.application h4 {
+    font-weight: normal;
+}
+
+
+/*notification*/
+
+.slds-notify_alert {
+    background-color: transparent!important;
+    border: $color-border-button-default 1px solid;
+    background-image: none!important;
+    border-radius: .25rem;
+    text-align: left;
+    justify-content: start;
+}
+
+.slds-notify_alert h6 {
+    font-weight: normal;
+}
+
+.purchase-summary {
+    border: $color-border-button-default 1px solid;
+    border-radius: .25rem;
+    padding: 0!important;
+}
+
+.purchase-summary hr {
+    margin: 0;
+}
+
+.purchase-summary h1 {
+    font-size: 4rem;
+    line-height: 1.25;
+}
+
+.purchase-summary h1 small {
+    display: block;
+    font-size: 1.125rem;
+    font-weight: normal;
+}
+
+.purchase-summary h3 {
+    font-size: 1.125rem;
+    font-weight: normal;
+}
+
+.purchase-summary h4 {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+
+/*chat*/
+
+.slds-chat-message__text_outbound span {
+    color: $palette-neutral-100;
+}
+
+.slds-icon-typing {
+    display: flex;
+}
+
+
+/*finalizacion*/
+
+.project_ended h4 {
+    font-weight: bold;
+}
+
+.feedback {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-summary-cards header {
+    border-bottom: 1px solid #dddbda;
+    margin-bottom: 1rem;
+}
+
+.project-summary-cards {
+    padding: 0;
+}
+
+.project-summary-cards h3 {
+    font-weight: normal;
+    font-size: 1.25rem;
+}
+
+.project-summary {
+    gap: 1rem;
+}
+
+
+/*freelace profile*/
+
+.optional_info.yellow::after {
+    background-color: $brand-primary-yellow;
+}
+
+.avatar_edit {
+    position: relative;
+}
+
+.avatar_edit button {
+    position: absolute;
+    top: -.25rem;
+    right: -.25rem;
+    border-radius: 100%;
+    background-color: $palette-neutral-100;
+}
+
+.freelance_profile h6 {
+    font-weight: normal;
+}
+
+.freelance_profile aside button {
+    border: none;
+}
+
+.freelance_profile aside .slds-pill__label {
+    padding: 0 .5rem;
+}
+
+.freelance_profile aside .slds-pill__label img {
+    width: 1rem;
+}
+
+.freelance_profile .slds-card__body {
+    min-height: initial!important;
+}
+
+.freelance_profile .habilidades-list h6 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+
+.freelance_profile .habilidades-list li {
+    line-height: 2rem;
+    display: bloc;
+}
+
+.freelance_profile .slds-modal__footer button {
+    background-color: transparent;
+    color: $brand-primary-bordeaux;
+}
+
+.habilidades_cargar .slds-grid {
+    gap: 1rem;
+}
+
+.habilidades_cargar button {
+    border-radius: 2rem;
+    border-color: $color-gray-5;
+}
+
+.habilidades_cargar button span {
+    transform: scale(.5);
+}
+
+.habilidades-cards h3 {
+    font-weight: normal;
+}
+
+.habilidades-cards h3 a span {
+    font-weight: normal;
+    color: #006DCC;
+}
+
+.habilidades-cards .slds-card__header {
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
+    padding-bottom: .5rem;
+}
+
+.archivo-adjunto .slds-card__header {
+    box-shadow: none;
+    padding-bottom: 0;
+}
+
+.habilidades-cards article {
+    margin-bottom: 1rem;
+}
+
+.habilidad-cargada h4 {
+    font-size: 1rem;
+}
+
+.slds-card.referencias {
+    margin-top: 1rem!important;
+}
+
+.habilidad-cargada h4 small {
+    display: block;
+    font-size: .75rem;
+}
+
+.habilidad-cargada .option-button {
+    margin-left: auto;
+}
+
+.habilidad-cargada .header-icon {
+    background-color: #F0F0F0;
+    color: #706E6B;
+    padding: 0.25rem;
+}
+
+.habilidad-cargada p {
+    font-size: .75rem;
+    margin-bottom: .5rem;
+}
+
+
+/*edition modals*/
+
+.edition-modals .slds-modal__title {
+    text-align: left;
+    font-weight: 700!important;
+    font-size: 1.25rem;
+}
+
+.edition-modals .slds-modal__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1rem solid $brand-primary-bordeaux!important;
+    border-bottom: none;
+}
+
+.edition-modals .slds-modal__close {
+    position: relative;
+    top: initial;
+    right: initial
+}
+
+.edition-modals .slds-modal__footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $palette-neutral-100;
+}
+
+.slds-modal .freelance_title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.slds-modal .freelance_title h1 {
+    font-size: 1.25rem;
+}
+
+.slds-modal .reputacion_list li article {
+    border-bottom: 1px solid $color-gray-5;
+}
+
+.slds-modal .reputacion_list li:last-child article {
+    border-bottom: none;
+}
+
+.sumar-puntos svg {
+    fill: $brand-primary-light_blue;
+}
+
+.slds-modal .slds-file-selector__dropzone {
+    width: 100%;
+}
+
+.slds-modal .slds-pill_container {
+    min-height: 3rem;
+}
+
+@media (max-width:700px) {
+    /*font adj*/
+    h1 {
+        font-size: 1.25rem;
+    }
+     ::-webkit-input-placeholder {
+        font-size: 1rem;
+    }
+     :-ms-input-placeholder {
+        font-size: 1rem;
+    }
+     ::placeholder {
+        font-size: 1rem;
+    }
+    .slds-input,
+    .slds-select,
+    option {
+        font-size: 1rem;
+    }
+    .slds-p-around_xx-large,
+    .slds-p-around--xx-large {
+        padding: 1.5rem;
+    }
+    .slds-global-header {
+        padding-left: 2rem!important;
+        padding-right: 2rem!important;
+    }
+    .app-wrapper {
+        padding: 2rem!important;
+    }
+    .slds-global-footer .slds-col {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+    }
+    .optional_info:after {
+        top: -2rem;
+    }
+    .slds-col button {
+        flex: 1;
+        margin: 0 0 1rem 0!important;
+    }
+    header.slds-media {
+        display: none;
+    }
+    .slds-progress__list {
+        margin: 3rem auto 1.5rem auto;
+    }
+    .slds-col button.slds-progress__marker {
+        margin: 0!important;
+    }
+    .optional_info:after {
+        width: 100vw;
+        left: -2rem!important;
+    }
+    .slds-pill_container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .optional_info header.slds-card {
+        margin-bottom: 1rem;
+    }
+    /*main menu*/
+    .slds-context-bar__secondary {
+        display: none;
+    }
+    /*tabs*/
+    .slds-tabs_default .tab-wrapper {
+        flex-direction: column;
+    }
+    .slds-tabs_default header.slds-media {
+        display: block;
+    }
+    .slds-card__body_inner.slds-grid h1 {
+        font-size: 2.75rem;
+    }
+    .invoices .width-100 {
+        padding: 0;
+    }
+    .slds-tabs_default .slds-card__body,
+    .slds-card__header {
+        min-height: initial;
+        padding: 0!important;
+    }
+    .inline-input {
+        gap: .5rem;
+    }
+    .inline-input .slds-col {
+        padding: 0;
+    }
+    .inline-input .icon-button {
+        margin: 0!important;
+        padding: 0!important;
+        width: 100%!important;
+    }
+    #faqs .slds-grid,
+    #nueva-factura .slds-grid {
+        flex-direction: column;
+    }
+    .tabla_mobile {
+        display: block;
+    }
+    .tabla_desktop {
+        display: none;
+    }
+    .slds-tabs h2 {
+        font-size: 1.25rem;
+    }
+    .slds-tabs h1 {
+        font-size: 1.5rem;
+    }
+    .botonera {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+    .application .slds-grid.width-100 {
+        padding: 0!important;
+    }
+    .application .slds-accordion {
+        margin-top: -1.5rem;
+    }
+    .application .slds-accordion .slds-accordion__summary {
+        padding: 0!important;
+    }
+    .application .reference-images .slds-card {
+        width: 100%!important;
+    }
+    .application .reference-images .slds-card .slds-card__header {
+        display: none;
+    }
+    .application .reference-images .slds-card__footer {
+        margin: 0;
+    }
+    .slds-accordion__list-item {
+        margin-bottom: 1rem!important;
+    }
+    /*freelance profile*/
+    .freelance_profile header .options {
+        position: absolute;
+        top: -3rem;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: .25rem;
+    }
+    .freelance_profile header .options button,
+    .freelance_profile header .options .slds-button.slds-radio_button {
+        height: 2rem;
+        width: 2.5rem;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0!important;
+    }
+    .freelance_profile header .options .slds-button.slds-radio_button:last-child {
+        display: none;
+    }
+    .freelance_profile header.slds-card {
+        margin-bottom: 1rem;
+        padding: 0;
+        background: none;
+        border: none;
+        box-shadow: none;
+    }
+    .freelance_profile header.slds-card .freelance.slds-grid {
+        flex-direction: column;
+    }
+    .freelance_profile header.slds-card .freelance.slds-grid .slds-avatar_large {
+        width: 10rem;
+        height: 10rem;
+    }
+    .freelance_profile header.slds-card .freelance_title h1,
+    .freelance_profile header.slds-card .freelance_title p {
+        text-align: center;
+    }
+    .freelance_profile .avatar_edit button {
+        top: 1rem;
+        right: 1rem;
+        z-index: 30;
+    }
+    .freelance_profile .avatar_edit {
+        margin: auto auto 1rem auto!important;
+    }
+    .slds-avatar {
+        position: relative;
+        padding: .25rem;
+        display: block;
+    }
+    .freelance_profile .slds-avatar:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: -0.25rem;
+        display: block;
+        width: 10.5rem;
+        height: 10.5rem;
+        background: rgb(102, 204, 153);
+        background: linear-gradient(90deg, rgba(102, 204, 153, 1) 0%, rgba(102, 204, 153, 1) 50%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 1) 100%);
+    }
+    .freelance_profile .slds-avatar img {
+        position: absolute;
+        margin: auto;
+        left: 0;
+        right: 0;
+        z-index: 20;
+        max-width: 9.5rem;
+        max-height: 9.5rem;
+        top: auto;
+        bottom: auto;
+        border-radius: 100%;
+    }
+    .freelance_profile aside .progress {
+        display: none;
+    }
+    .freelance_profile .slds-tabs_default__content .wrapper,
+    .freelance_profile .habilidades_edit article>.slds-grid {
+        flex-direction: column!important;
+    }
+    .freelance_profile .habilidades article>.slds-grid,
+    .freelance_profile .habilidades_edit article>.slds-grid {
+        flex-direction: row!important;
+        align-items: center;
+        padding: 0.5rem!important;
+        margin-bottom: 0!important
+    }
+    .freelance_profile .habilidades .slds-col button,
+    .freelance_profile .habilidades_edit .slds-col button {
+        margin: 0!important;
+    }
+    .freelance_profile .habilidades h6,
+    .freelance_profile .habilidades_edit h6 {
+        display: none;
+    }
+    .freelance_profile .slds-grid.slds-p-around_xx-large {
+        padding: 0!important;
+    }
+    .freelance_profile .slds-radio_button .slds-radio_faux {
+        padding: 0!important;
+    }
+    .freelance_profile .habilidades_edit article.habilidades_cargar>.slds-grid,
+    .freelance_profile .habilidades-cards .slds-grid {
+        flex-direction: column!important;
+    }
+    .freelance_profile header.slds-media {
+        display: flex!important;
+    }
+    .freelance_profile .habilidad-cargada {
+        padding: 1rem!important;
+    }
+    .freelance_profile .habilidades_edit article.habilidades_cargar>.slds-grid {
+        justify-content: flex-start;
+        gap: 0;
+        align-items: flex-start;
+    }
+    .slds-modal__container {
+        max-width: 85vw;
+    }
+    .slds-modal__header {
+        justify-content: space-between;
+    }
+    .slds-modal__header button {
+        position: absolute;
+        right: 1rem;
+    }
+}

@@ -1,0 +1,277 @@
+$brand-primary-bordeaux: #80002F !default;
+
+.header-register-bordeaux {
+    padding-left: 5rem;
+    padding-bottom: 1rem ;
+    background-color: $brand-primary-bordeaux;
+    height: 3rem;
+    display: flex;
+    position: sticky;
+    max-width: 100%;
+    top: 0;
+    z-index: 15;
+}
+
+.register-header_container {
+    width: 100%;
+    margin: auto;
+    position: relative;
+    top: initial;
+}
+
+.container-button-sticky {
+    position: fixed;
+    bottom: 0; 
+    display: flex;
+    max-height: 5rem;
+    padding: 2rem 2rem  ;
+    width: 100%;
+    justify-content: flex-end;
+    background-color: white;
+    border-top: 2px solid #DDDBDA;
+}
+.container-button-after{
+    max-width: 15rem;
+    width: 15rem;
+    margin-right: 4rem;
+}
+
+.container-before-button{
+    max-width: 10rem;
+    width: 10rem;
+    margin-right: 2rem;
+}
+
+.container-pills-skills{
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    height: auto;
+    margin-bottom: 2rem;
+}
+
+
+
+.pill-skills {
+    cursor: pointer;
+    display: flex;
+    background: #FFFFFF;
+    border: 1px solid #DDDBDA;
+    border-radius: 20px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    color: #706E6B;
+    padding:.5rem;
+    margin-left: .5rem;
+    margin-top:  .5rem;
+}
+
+.container-areas {
+    width: 50rem;
+    margin-left: 10vw ;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+    min-height: 100%;
+}
+
+.areas-title {
+    color: $brand-primary-bordeaux;
+    font-style: bold;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.cont-error{
+    display: flex;
+    color: #C23934 ;
+    margin-top: 2rem;
+    margin-bottom: 0;
+    align-items: center;
+}
+
+.error-areas{
+    color: #C23934;
+    font-size: 16px;
+    margin-left: 1rem;
+    
+}
+
+.container-accordion{
+    margin-top: 3rem;
+    max-width: 90%;
+    height: 100%;
+    margin-bottom: 10rem;
+    
+}
+.container-skills{
+    width: 100%;
+    padding: 2px 10px;
+    border: 1px solid #B0ADAB;
+    border-radius: 5px;
+    background-color: #F5F5F5;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+}
+
+.css-18k51dd-MuiAutocomplete-root .MuiInput-root .MuiInput-input{
+    height: 50px;
+    
+}
+.MuiAutocomplete-hasPopupIcon.css-yds87n-MuiAutocomplete-root .MuiAutocomplete-inputRoot, .MuiAutocomplete-hasClearIcon.css-yds87n-MuiAutocomplete-root .MuiAutocomplete-inputRoot{
+    padding: 5px 0 0 10px;
+}
+.css-1a1fmpi-MuiInputBase-root-MuiInput-root:before{
+    border-bottom: none!important;
+}
+.css-i4bv87-MuiSvgIcon-root{
+    display: none!important;
+}
+
+.container-idioms {
+    width: 80%;
+    margin-left: 10vw ;
+    margin-top: 5rem;
+}
+.container-input-idioms{
+    display: flex;
+    min-width: 100%;
+}
+
+.container-tags{
+    display: flex;
+    height: auto;
+    flex-wrap: wrap;
+}
+
+
+.cont-imagen-freelas {
+    display: flex;
+    margin: auto;
+    height: 300px;
+    width: 100%;
+    justify-content: center;
+}
+
+.autocomplete-idioms{
+    width: 50%;
+    margin-right: 1rem;
+    max-height: 58px;
+}
+
+.cont-chips-idioms {
+    margin: 1rem 0;
+    display: flex;
+}
+
+.cont-icon-idiom{
+    border: 2px solid #DDDBDA;
+    margin: 0 5px;
+    border-radius: 10px;
+    color: #DDDBDA;
+    cursor: pointer;
+    height: 50px;
+    min-width: 50px;
+    background-color: #FFFFFF;
+    align-items: center;
+}
+
+.icon-idioma{
+    height: 20px;
+}
+
+.cont-first-idioms{
+    display: flex;
+    max-width: 85%;
+    margin-bottom: 20px;
+}
+
+.container-buttons-idioms {
+    display: flex;
+}
+
+@media screen and (max-width: 1000px) {
+    .container-input-idioms{
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    .header-register-bordeaux {
+        padding-left: 3rem;
+    }
+
+    .container-areas{
+        width: 80%;
+        margin: auto;
+    }
+
+    .areas-title {
+        font-size: 24px;
+    }
+    .container-accordion{
+        width: 100%;
+        font-size: small;
+        margin-bottom: 3rem;
+        margin-top: 2rem;
+    }
+    
+    
+    .container-input-idioms{
+        flex-wrap: wrap;
+        margin-bottom: 1rem;
+        min-width: 60%;
+    }
+   
+    .autocomplete-idioms{
+        width: 95%;
+        margin-bottom: 2rem;
+        margin-right: 0;
+    }
+
+    .cont-form-group{
+        min-width: 22rem;
+    }
+
+    .cont-imagen-freelas {
+        height: 200px;
+    }
+    .container-button-sticky {
+        position: relative;
+        width: 80%;
+        margin:auto;
+        left: 0;
+        top: 17rem;
+        flex-wrap: wrap;
+        justify-content:flex-start;
+        padding: 2rem, 0;
+    }
+    .container-button-after{
+        max-width: 100%;
+        width: 100%;
+        margin-right: 0;
+    }
+    .container-before-button{
+        max-width: 100%;
+        width: 100%;
+        margin-right: 0 ;
+        margin-bottom: 1rem;
+    }
+    .cont-first-idioms{
+        display: flex;
+        max-width: 100%;
+    }
+
+    .cont-icon-idiom{
+        position: relative;
+    }
+
+    .cont-chips-idioms{
+        flex-wrap: wrap;
+    }
+}
+
+

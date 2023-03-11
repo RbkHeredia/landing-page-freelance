@@ -1,0 +1,35 @@
+$brand-primary-bordeaux: #da0050 !default;
+
+.footer-cont {
+    position: relative;
+    max-width: 100%;
+    display: flex;
+    background-color: $brand-primary-bordeaux;
+    color: white;
+    height: auto;
+    padding: 2vw 10vw 0 5vw;
+
+}
+
+.column-footer {
+    font-weight: 18px;
+    width: 25%;
+    margin-right: 1rem;
+}
+
+.list-style {
+    list-style: none;
+    margin-top: 3vw;
+    padding-left: 0;
+    line-height: 2rem;
+}
+
+@media screen and (max-width: 600px) {
+    .footer-cont {
+        padding-left: 10vw;
+        flex-wrap: wrap;
+    }
+    .column-footer {
+        width: 45%;
+    }
+}

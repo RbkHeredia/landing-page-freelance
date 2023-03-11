@@ -1,0 +1,51 @@
+/*font settings*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+$montserrat: 'Montserrat';
+$regular:500;
+$bold:700;
+*,
+html,
+body {
+    font-family: $montserrat;
+    color: $color-gray-11
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $montserrat;
+    font-weight: $bold;
+    line-height: 120%;
+    color: $color-gray-13;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+
+/* primary */
+
+$brand-primary-bordeaux: #80002F !default;
+$brand-primary-light_blue:#80D7E6!default;
+$brand-primary-yellow:#FFBF5A!default;
+$brand-primary-pink:#FFB6CE!default;
+$brand-primary-bordeaux_darker: #620024 !default;
+
+/* secondary */
+
+$brand-secondary-lilac: #DB81FF !default;
+$brand-secondary-green: #66CC99 !default;
+$brand-secondary-green_darker: #4fa077 !default;
+
+/*footer*/
+
+$footer-height:8rem!default;
