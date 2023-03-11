@@ -2,7 +2,7 @@
   "name": "react-landing-page",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://rbkheredia.github.io/landing-page-freelance",
+  "homepage": "https://rbkheredia.github.io/landing-page-freelance/",
   "dependencies": {
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
