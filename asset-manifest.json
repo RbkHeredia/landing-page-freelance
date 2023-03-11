@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/landing-page-freelance/static/css/main.701a4206.css",
-    "main.js": "/landing-page-freelance/static/js/main.2bba41b4.js",
-    "static/media/office.jpg": "/landing-page-freelance/static/media/office.051af920daecb6381c1b.jpg",
-    "static/media/worker.jpg": "/landing-page-freelance/static/media/worker.a92c41b851977e4abd99.jpg",
-    "static/media/freelas_4.svg": "/landing-page-freelance/static/media/freelas_4.9ba1732ed746afd0537541ab0c4acd44.svg",
-    "static/media/avatar.png": "/landing-page-freelance/static/media/avatar.16dc50feeb832a44ff29.png",
-    "static/media/medios-pago.png": "/landing-page-freelance/static/media/medios-pago.525f0afa2cfbb3909449.png",
-    "static/media/logo.svg": "/landing-page-freelance/static/media/logo.12411d1243d03ce2ba7462dfdc37a4e4.svg",
-    "static/media/ES.svg": "/landing-page-freelance/static/media/ES.89b9b7bd9cb67e00f600.svg",
-    "static/media/clip.svg": "/landing-page-freelance/static/media/clip.f38994e54e3e48e757cd.svg",
-    "index.html": "/landing-page-freelance/index.html",
-    "static/media/plus.svg": "/landing-page-freelance/static/media/plus.7a3886becd6c933aa777.svg",
-    "static/media/star.svg": "/landing-page-freelance/static/media/star.2aeb234c38aea2e1f1f6.svg",
-    "static/media/rayo.svg": "/landing-page-freelance/static/media/rayo.3595a62904682491f80e.svg",
-    "main.701a4206.css.map": "/landing-page-freelance/static/css/main.701a4206.css.map",
-    "main.2bba41b4.js.map": "/landing-page-freelance/static/js/main.2bba41b4.js.map"
+    "main.css": "/static/css/main.701a4206.css",
+    "main.js": "/static/js/main.dfc71153.js",
+    "static/media/office.jpg": "/static/media/office.051af920daecb6381c1b.jpg",
+    "static/media/worker.jpg": "/static/media/worker.a92c41b851977e4abd99.jpg",
+    "static/media/freelas_4.svg": "/static/media/freelas_4.9ba1732ed746afd0537541ab0c4acd44.svg",
+    "static/media/avatar.png": "/static/media/avatar.16dc50feeb832a44ff29.png",
+    "static/media/medios-pago.png": "/static/media/medios-pago.525f0afa2cfbb3909449.png",
+    "static/media/logo.svg": "/static/media/logo.12411d1243d03ce2ba7462dfdc37a4e4.svg",
+    "static/media/ES.svg": "/static/media/ES.89b9b7bd9cb67e00f600.svg",
+    "static/media/clip.svg": "/static/media/clip.f38994e54e3e48e757cd.svg",
+    "index.html": "/index.html",
+    "static/media/plus.svg": "/static/media/plus.7a3886becd6c933aa777.svg",
+    "static/media/star.svg": "/static/media/star.2aeb234c38aea2e1f1f6.svg",
+    "static/media/rayo.svg": "/static/media/rayo.3595a62904682491f80e.svg",
+    "main.701a4206.css.map": "/static/css/main.701a4206.css.map",
+    "main.dfc71153.js.map": "/static/js/main.dfc71153.js.map"
   },
   "entrypoints": [
     "static/css/main.701a4206.css",
-    "static/js/main.2bba41b4.js"
+    "static/js/main.dfc71153.js"
   ]
 }
