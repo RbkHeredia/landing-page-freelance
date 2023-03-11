@@ -2,6 +2,7 @@
   "name": "react-landing-page",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://rbkheredia.github.io/landing-page-freelance",
   "dependencies": {
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
@@ -22,14 +23,16 @@
     "react-scripts": "5.0.1",
     "sass": "^1.56.1",
     "web-vitals": "^2.1.4",
-    "yup": "^0.32.11"    
+    "yup": "^0.32.11"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "server": "json-server --watch db.json --port 5000 "
+    "server": "json-server --watch db.json --port 5000 ",
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -48,5 +51,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
   }
 }
